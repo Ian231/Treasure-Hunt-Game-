@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>page demo</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div data-role="page" id="hunt">
+
+        <div class="header" data-role="header" data-position="fixed" data-add-back-btn="true">
+            <h1>Welcome</h1>
+        </div>
+        <div role="main" class="ui-content">
+
+            <h2 id="test_status"></h2>
+            <div id="test"></div>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h1>Page footer </h1>
+        </div>
+    </div>
+
+    <script>
+var content = $.mobile.getScreenHeight() - $(".ui-header").outerHeight() - $(".ui-footer").outerHeight() - $(".ui-content").outerHeight() + $(".ui-content").height();
+$(".ui-content").height(content);
+        
+  $(document).ready(function D() {
+                    $('td').click(function (event) { 
+                     $.mobile.changePage("#hunt", "fade");
+                    });
+                    
+                });
+</script>
+</body>
+
+</html>

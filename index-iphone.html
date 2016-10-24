@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>page demo</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+  
+
+a {
+	text-decoration: none;
+}
+h1 {
+	color: #ffffff;
+	text-shadow:none;
+	opacity: 1;
+}
+
+ .ui-page .ui-header, .ui-page .ui-footer{
+           background-color: #0270c5;
+           opacity: 0.7;
+           border: 0px;
+           
+        }
+        
+        .ui-page .ui-header{
+            border-top: 50px solid #0270c5;
+            height:  50px;
+            padding: 0px;
+            line-height: 5px;
+        }
+        
+       
+        
+#home{
+	background-color: #afafaf;
+	background-image: url("matteback5.jpg");
+	background-size: 100%;
+}
+
+
+        
+        .ui-btn, label.ui-btn{
+            border-width: 0px;
+        }
+        
+        .ui-shadow {
+            box-shadow: none;
+        }
+
+        .ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    background-color: #ff5c5c;
+    border-color: #ddd;
+    text-shadow: 0px 0px 0px #f3f3f3;
+            color: white;
+}
+
+ .ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    background-color: #fd3434;
+    border-color: #ddd;
+    text-shadow: 0px 0px 0px #f3f3f3;
+            color: white;
+}
+        
+  
+        
+/* back button */
+        .ui-page-theme-b .ui-btn, html .ui-bar-b .ui-btn, html .ui-body-b .ui-btn, html body .ui-group-theme-b .ui-btn, html head + body .ui-btn.ui-btn-b, .ui-page-theme-b .ui-btn:visited, html .ui-bar-b .ui-btn:visited, html .ui-body-b .ui-btn:visited, html body .ui-group-theme-b .ui-btn:visited, html head + body .ui-btn.ui-btn-b:visited {
+            background-color: #ff5c5c;
+    border-color: #ddd;
+    text-shadow: 0px 0px 0px #f3f3f3;
+            color: white;   
+            margin-top: 20px;
+            margin-left: 10x;
+}
+
+  .ui-page-theme-b .ui-btn:hover, html .ui-bar-b .ui-btn:hover, html .ui-body-b .ui-btn:hover, html body .ui-group-theme-b .ui-btn:hover, html head + body .ui-btn.ui-btn-b:hover, .ui-page-theme-b .ui-btn:visited, html .ui-bar-b .ui-btn:visited, html .ui-body-b .ui-btn:visited, html body .ui-group-theme-b .ui-btn:visited, html head + body .ui-btn.ui-btn-b:visited {
+            background-color: #fd3434;
+    border-color: #ddd;
+    text-shadow: 0px 0px 0px #f3f3f3;
+            color: white;    
+}
+        /*------------*/
+        
+        
+        #buttons {
+            /* margin-top: 35%;*/
+            
+    
+        }
+        
+        #splashpage{
+            text-align: center;
+        }
+        
+         #logo{
+            height: 150px;
+            width: 180px;
+
+        }
+        
+        #spin{
+            height: 50px;
+            width: 50px;
+  
+        }
+        
+        
+    </style>
+</head>
+<body>
+ 
+    
+    
+    <div data-role="page" id="splashpage">
+
+  <div role="main" class="ui-content">
+    
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="logo.png" id="logo" />
+      <br>
+      <br>
+<img src="spin.gif" id="spin" />
+
+
+  </div>
+  
+</div> 
+    
+    
+<!--------------------------------------------------------HOMEPAGE------------------------------------------------------------------>
+
+
+<div data-role="page" id="home">
+  <div data-role="header" data-position="fixed">
+    <h1>Underground</h1>
+  </div>
+  <div role="main" class="ui-content">
+
+   <div id="buttons"> 
+      <a href="#hunt"><input type="button" value="HUNT"></a>
+	  <a href="#hunt"><input type="button" value="POINTS OF INTEREST"></a>
+	  <a href="#hunt"><input type="button" value="NEWSLETTER"></a>
+	  <a href="#hunt"><input type="button" value="CONTACT"></a>
+</div>
+  </div>
+  
+
+  <div data-role="footer" data-position="fixed">
+    <h1>Zakariya</h1>
+  </div>
+</div> 
+ 
+
+ 
+ <!--------------------------------------------------------HUNTPAGE------------------------------------------------------------------>
+ 
+ 
+ <div data-role="page" id="hunt">
+  <div class="header" data-role="header" data-position="fixed" data-add-back-btn="true">
+
+    <h1>Welcome</h1>
+  </div>
+  <div role="main" class="ui-content">
+
+  </div>
+  
+
+  <div data-role="footer" data-position="fixed">
+    <h1>Page footer </h1>
+  </div>
+</div> 
+ 
+ <script>
+ setTimeout(function(){
+     $.mobile.changePage("#home", "fade");
+}, 3000);
+    </script>
+</body>
+</html>

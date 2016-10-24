@@ -1,0 +1,210 @@
+
+   
+body{
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+   a {
+            text-decoration: none;
+        }
+        h1 {
+            color: #ffffff;
+            text-shadow: none;
+            opacity: 1;
+        }
+        .ui-page .ui-header,
+        .ui-page .ui-footer {
+            background-color: #0270c5;
+            opacity: 0.7;
+            border: 0px;
+        }
+        .ui-page .ui-header {
+            border-top: 50px solid #0270c5;
+            height: 50px;
+            padding: 0px;
+            line-height: 5px;
+        }
+.ui-content{
+    height: 100%;
+    border: 0px solid #ff0000;
+}
+        #home {
+            background-color: #afafaf;
+            background-image: url("wallpaper2.jpg"); 
+              background-color: #000000;
+            background-size: 100%;
+        }
+        .ui-btn,
+        label.ui-btn {
+        
+        }
+        .ui-shadow {
+          
+        }
+        .ui-page-theme-a .ui-btn,
+        html .ui-bar-a .ui-btn,
+        html .ui-body-a .ui-btn,
+        html body .ui-group-theme-a .ui-btn,
+        html head + body .ui-btn.ui-btn-a,
+        .ui-page-theme-a .ui-btn:visited,
+        html .ui-bar-a .ui-btn:visited,
+        html .ui-body-a .ui-btn:visited,
+        html body .ui-group-theme-a .ui-btn:visited,
+        html head + body .ui-btn.ui-btn-a:visited {
+ 
+             background-color: #ff5c5c;
+            border-color: #ddd;
+            text-shadow: 0px 0px 0px #f3f3f3;
+            color: white;
+            height:100%;
+            opacity: 0.9;
+            font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+            font-size: 20px;
+        }
+        .ui-page-theme-a .ui-btn:hover,
+        html .ui-bar-a .ui-btn:hover,
+        html .ui-body-a .ui-btn:hover,
+        html body .ui-group-theme-a .ui-btn:hover,
+        html head + body .ui-btn.ui-btn-a,
+        .ui-page-theme-a .ui-btn:visited,
+        html .ui-bar-a .ui-btn:visited,
+        html .ui-body-a .ui-btn:visited,
+        html body .ui-group-theme-a .ui-btn:visited,
+        html head + body .ui-btn.ui-btn-a:visited {
+             background-color: #fd3434;
+            border-color: #ddd;
+            text-shadow: 0px 0px 0px #f3f3f3;
+            color: white;
+
+        } 
+td {
+    margin-top: 10px;
+}
+        #splashpage {
+            text-align: center;
+        }
+        #logo {
+            
+            height: 150px;
+            width: 180px;
+        }
+        #spin {
+            height: 50px;
+            width: 50px;
+        }
+        .ui-content .ui-btn {
+      
+            margin: 0px;
+        }
+        
+        table {
+            width: 100%;
+            height: 90%;
+            border: 0px solid black;
+        }
+        table tr td {
+            margin: 0px;
+            padding-top: -10px;
+          /*  background-color: #ff5c5c; */
+            text-align: left;
+            color: #ffffff;
+            text-shadow: none;
+            width: 20%;
+            opacity: 0.8;
+            font-weight: bold;
+            font-size: 20px;
+              border-radius: 0px;
+            height: 200px;
+-webkit-box-shadow: 0px 0px 4px 2px rgba(0,36,115,1);
+-moz-box-shadow: 0px 0px 4px 2px rgba(0,36,115,1);
+box-shadow: 0px 0px 4px 2px rgba(0,36,115,1);
+height: 30%;
+line-height: 50px;
+        }
+
+
+        table tr td:active {
+            margin: 0px;
+            padding-top: -10px;
+            background-color: #fd3434; 
+            opacity: 1;
+}
+
+tr:nth-of-type(1) td:nth-of-type(1), tr:nth-of-type(1) td:nth-of-type(1):hover {
+   /* background: #01a8eb; */
+    opacity: 0.8;
+    height: 100px;
+    text-align: center;
+    border: 5px solid #022d64;
+    background-image: url("bannerback.jpg"); 
+    background-size: cover;
+    font-size: 20px;
+}
+
+tr:nth-of-type(2) td:nth-of-type(1), tr:nth-of-type(2) td:nth-of-type(1):hover {
+   background-color: #ff5c5c;
+      height: 100px;
+    background-image: url("huntback.jpg"); 
+    background-size: cover;
+
+}
+tr:nth-of-type(3) td:nth-of-type(1), tr:nth-of-type(3) td:nth-of-type(1):hover {
+   background-color: #ff5c5c;
+    height: 100px;
+    background-image: url("pointsofinterestback.jpg"); 
+    background-size: cover;
+
+}
+tr:nth-of-type(4) td:nth-of-type(1), tr:nth-of-type(4) td:nth-of-type(1):hover {
+   background-color: #ff5c5c;
+    height: 100px;
+    background-image: url("newsletterback.jpg"); 
+    background-size: cover;
+
+}
+
+tr:nth-of-type(5) td:nth-of-type(1), tr:nth-of-type(5) td:nth-of-type(1):hover {
+   background-color: #ff5c5c;
+    height: 100px;
+    background-image: url("articlesback.jpg"); 
+    background-size: cover;
+
+}
+tr:nth-of-type(6) td:nth-of-type(1), tr:nth-of-type(6) td:nth-of-type(1):hover {
+   background-color: #ff5c5c;
+    height: 100px;
+    background-image: url("contactback.jpg"); 
+    background-size: cover;
+
+}
+
+
+#treasurelogo {
+    float: left;
+    margin-left: 20px;
+    height: 60px;
+    width: 60px;
+}
+#pointslogo{
+    float: left;
+        margin-left: 20px;
+      height: 60px;
+    width: 60px;  
+}
+#newslogo{
+    float: left;
+        margin-left: 20px;
+     height: 60px;
+    width: 60px;  
+}
+#articleslogo{
+    float: left;
+        margin-left: 20px;
+     height: 60px;
+    width: 60px;  
+}
+#contactlogo{
+    float: left;
+        margin-left: 20px;
+     height: 60px;
+    width: 60px;  
+}

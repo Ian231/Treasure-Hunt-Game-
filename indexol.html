@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>page demo</title>
+
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+
+<body>
+  <div data-role="page" id="splashpage">
+    <div role="main" class="ui-content">
+      <table cellspacing="0">
+        <tbody>
+          <tr>
+            <td>
+
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+
+            </td>
+
+          </tr>
+
+        </tbody>
+      </table>    
+
+      <img src="logo.png" id="logo" />
+
+      <img src="hand2.png" id="hand" />
+
+      <!-- <img src="spin.gif" id="spin" /> -->
+    </div>
+  </div>
+
+
+  <!--------------------------------------------------------HOMEPAGE------------------------------------------------------------------>
+
+
+  <div data-role="page" id="home" style="height: 100%;">
+    <div role="main" class="ui-content">
+
+
+
+      <table cellspacing="10">
+       <tbody>
+        <tr id="banner">
+         <td colspan="3">HOME</td>
+       </tr>
+       <tr>
+        <td id="btnHunt-home" rowspan="2"><img src="Treasure.png" id="treasurelogo"/><br>HUNT</td>
+        <td id="btnPOI-home"><img src="point.png" id="pointslogo"/><br>POINTS OF INTEREST</td>
+        <td id="btnTeam-home" ><img src="teamlogo.png" id="teamlogo"/><br>MEET THE TEAM</td>
+      </tr>
+      <tr>
+       <td id="btnArticles-home"><img src="articles.png" id="articleslogo"/><br>ARTICLES</td>
+       <td id="btnContact-home"><img src="contact.png" id="contactlogo"/><br>CONTACT</td>
+     </tr>
+   </tbody>
+ </table>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+<div data-role="page" id="huntMenu">
+
+  <div class="header" data-role="header" data-position="fixed" data-add-back-btn="false">
+    <h1>HUNT</h1>
+  </div>
+  <div role="main" class="ui-content">
+
+
+    <div id="sidenav">
+
+      <ul>
+       <li class="btnHome">HOME</li>
+       <li style="background:#0270c5;">HUNT</li>
+       <li class="btnPOI">POI</li>
+       <li class="btnNews">NEWS</li>
+       <li class="btnTeam">TEAM</li>
+       <li class="btnContact">CONTACT</li>
+     </ul>
+
+   </div>
+
+
+   <table cellspacing="20">
+    <tr>
+      <td id="btnRules">RULES</td>
+      <td id="btnStart" rowspan="2">START</td>
+    </tr>
+    <tr>
+      <td id="btnFav">FAVOURITES</td>
+    </tr>
+  </table>
+
+
+</div>
+
+       <!-- <div data-role="footer" data-position="fixed">
+            <h1>Page footer </h1>
+          </div> -->
+        </div>
+
+
+
+
+
+        <div data-role="page" id="team">
+
+          <div class="header" data-role="header" data-position="fixed" data-add-back-btn="false">
+            <h1>MEET THE TEAM</h1>
+          </div>
+          <div role="main" class="ui-content">
+
+
+            <div id="sidenav">
+
+              <ul>
+               <li class="btnHome">HOME</li>
+               <li class="btnHunt">HUNT</li>
+               <li class="btnPOI">POI</li>
+               <li class="btnNews">NEWS</li>
+               <li style="background:#ff0000;">TEAM</li>
+               <li class="btnContact">CONTACT</li>
+             </ul>
+
+           </div>
+
+
+           <table cellspacing="20">
+            <tr>
+              <td>Zakariya</td>
+              <td>Maywand</td>
+            </tr>
+            <tr>
+              <td>Ian</td>
+              <td>Bryan</td>
+            </tr>
+          </table>
+
+
+        </div>
+
+       <!-- <div data-role="footer" data-position="fixed">
+            <h1>Page footer </h1>
+          </div> -->
+        </div>
+
+
+
+
+
+
+
+
+        <div data-role="page" id="poi">
+
+          <div class="header" data-role="header" data-position="fixed" data-add-back-btn="false">
+            <h1>POINT OF INTEREST</h1>
+          </div>
+          <div role="main" class="ui-content">
+
+
+            <div id="sidenav">
+
+              <ul>
+               <li class="btnHome">HOME</li>
+               <li class="btnHunt">HUNT</li>
+               <li style="background:#ff0000;">POI</li>
+               <li class="btnNews">NEWS</li>
+               <li class="btnTeam">TEAM</li>
+               <li class="btnContact">CONTACT</li>
+             </ul>
+
+           </div>
+
+
+
+           <div class="container">
+
+             <ul class="tabs">
+              <li class="tab-link current" data-tab="tab-POI">Tab One</li>
+              <li class="tab-link" data-tab="tab-2">Tab Two</li>
+
+            </ul>
+
+            <div id="tab-POI" class="tab-content current">
+              <ul>
+               <li>Button1</li>   
+             </ul>
+           </div>
+           <div id="tab-2" class="tab-content">
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           </div>
+
+
+         </div><!-- container -->
+
+
+
+
+
+
+
+
+
+
+
+
+          <!--    
+              
+              
+
+           <div id="tabs">
+            <ul>
+              <li>
+                <a href="#a">Tab A</a>
+              </li>
+              <li>
+                <a href="#b">Tab B</a>
+              </li>
+              <li>
+                <a href="#c">Tab C</a>
+              </li>
+              <li>
+                <a href="#d">Tab D</a>
+              </li>
+            </ul>
+            <div id="a">
+              Content of A
+            </div>
+            <div id="b">
+              Content of B
+            </div>
+            <div id="c">
+              Content of C
+            </div>
+            <div id="d">
+              Content of D
+            </div>
+          </div>
+
+        -->
+
+      </div>
+
+       <!-- <div data-role="footer" data-position="fixed">
+            <h1>Page footer </h1>
+          </div> -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div data-role="page" id="articles">
+
+          <div class="header" data-role="header" data-position="fixed" data-add-back-btn="false">
+            <h1>ARTICLES</h1>
+          </div>
+          <div role="main" class="ui-content">
+
+
+            <div id="sidenav">
+
+              <ul>
+               <li class="btnHome">HOME</li>
+               <li class="btnHunt">HUNT</li>
+               <li class="btnPOI">POI</li>
+               <li style="background:#0270c5;">NEWS</li>
+               <li class="btnTeam">TEAM</li>
+               <li class="btnContact">CONTACT</li>
+             </ul>
+
+           </div>
+
+
+           <div id="tabs1">
+            <ul>
+              <li>
+                <a href="#tab1">Tab A</a>
+              </li>
+              <li>
+                <a href="#tab2">Tab B</a>
+              </li>
+              <li>
+                <a href="#tab3">Tab C</a>
+              </li>
+              <li>
+                <a href="#tab4">Tab D</a>
+              </li>
+            </ul>
+            <div id="tab1">
+              Content of A
+            </div>
+            <div id="tab2">
+              Content of B
+            </div>
+            <div id="tab3">
+              Content of C
+            </div>
+            <div id="tab4">
+              Content of D
+            </div>
+          </div>
+
+
+
+        </div>
+
+       <!-- <div data-role="footer" data-position="fixed">
+            <h1>Page footer </h1>
+          </div> -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div data-role="page" id="contact">
+
+          <div class="header" data-role="header" data-position="fixed" data-add-back-btn="false">
+            <h1>CONTACT US</h1>
+          </div>
+          <div role="main" class="ui-content">
+
+
+            <div id="sidenav">
+
+              <ul>
+               <li class="btnHome">HOME</li>
+               <li class="btnHunt">HUNT</li>
+               <li class="btnPOI">POI</li>
+               <li class="btnNews">NEWS</li>
+               <li class="btnTeam">TEAM</li>
+               <li style="background:#0270c5;">CONTACT</li>
+             </ul>
+
+           </div>
+
+
+
+
+           <table>
+            <tr>
+              <td>Name</td>
+              <td><input type="text" name="text-basic" id="text-basic" value=""></td>
+            </tr>
+
+            <tr>
+              <td>Email</td>
+              <td><input type="text" name="text-basic" id="text-basic" value=""></td>
+            </tr>
+
+            <tr>
+              <td>Message</td>
+              <td><textarea cols="40" rows="8" name="textarea" id="textarea"></textarea></td>
+
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><button id="sendContact" style="background-color:#0270c5;">Send</button></td>
+
+            </tr>
+            
+
+          </table>
+
+
+
+
+        </div>
+
+       <!-- <div data-role="footer" data-position="fixed">
+            <h1>Page footer </h1>
+          </div> -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--------------------------------------------------------HUNTPAGE------------------------------------------------------------------>
+
+        <div data-role="page" id="hunt">
+
+
+          <div role="main" class="ui-content">
+
+
+            <div id="sidenav">
+
+              <ul>
+                <li class="btnHome">HOME</li>
+                <li style="background:#0270c5;">HUNT</li>
+                <li class="btnPOI">POI</li>
+                <li class="btnNews">NEWS</li>
+                <li class="btnTeam">TEAM</li>
+                <li class="btnContact">CONTACT</li>
+              </ul>
+
+            </div>
+
+
+
+
+
+
+
+
+            <svg style="position:relative;height:160px; width:105%;text-align:center;border:0px solid black;left:-20px;" xmlns="http://www.w3.org/2000/svg">
+             <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+             <g>
+              <title>Layer 1</title>
+              <!-- <polyline id="svg_1" fill="none" stroke-width="15" stroke="#909599" points="-1.9999676942825317,188 318.5000305175781,188 100%,188 "/> -->
+              <text id="line" xml:space="preserve" text-anchor="middle" font-family="Calibri" font-size="40" id="svg_4" y="70" x="55%" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Text Here</text>
+
+              <line x1="0" y1="100"  x2="100%" y2="100"  stroke="#ff0000" stroke-width="20" />
+
+
+              <circle id="svg_3" r="50" cy="100" cx="90%" stroke-linecap="null" stroke-linejoin="null" stroke-width="15" stroke="#000000" fill="#ffffff"/>
+
+              <text  xml:space="preserve" text-anchor="middle" font-family="Calibri" font-size="20" id="svg_4" y="95" x="90%" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">SCORE</text>
+
+              <text id="score" xml:space="preserve" text-anchor="middle" font-family="Calibri" font-size="40" id="svg_4" y="130" x="90%" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">0</text>
+            </g>
+          </svg>
+
+          <div style="margin-top:-60px;padding-left:9%;" id="#map-hunt"><iframe src="" width="110%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>   
+
+
+          <table cellspacing="10">
+            <tbody>
+
+
+              <tr>
+                <td colspan="2">
+
+
+                </td>
+
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <font id="question"></font>
+                </td>
+
+
+
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="radioanswers">
+                    <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1"  />
+                    <label id="radio-choice-1" onClick="setBackhround('radio-choice-1');" for="radio-choice-1">radio1</label>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="radioanswers">
+                   <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+                   <label id="radio-choice-2" for="radio-choice-2">radio2</label>
+                 </div>
+               </td>
+
+             </tr>
+             <tr>
+              <td>   
+                <div class="radioanswers">
+                  <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+                  <label id="radio-choice-3" for="radio-choice-3">radio3</label>
+                </div>
+              </td>
+              <td>
+                <div class="radioanswers">
+                  <input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4"  />
+                  <label id="radio-choice-4" for="radio-choice-4">radio4</label>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <button id="addFav" style="background-color:#0270c5;">Add to Favourites</button>
+                <button id="hint1" style="background-color:#0270c5;">Hint 1</button> 
+              </td>
+
+              <td>
+               <button id="next" style="background-color:#0270c5;">Next</button>
+               <button id="hint2" style="background-color:#0270c5;">Hint 2</button>
+             </td>
+
+           </tr>
+           <tr>
+            <td></td>
+            <td style="padding-left:350px;padding-top:50px;">
+
+              <button id="done" style="background-color:#0270c5;">Done</button></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+
+       <!-- <div data-role="footer" data-position="fixed">
+            <h1>Page footer </h1>
+          </div> -->
+        </div>
+
+        <script>
+
+        $(document).ready(function(){
+
+         $('ul.tabs li').click(function(){
+          var tab_id = $(this).attr('data-tab');
+
+          $('ul.tabs li').removeClass('current');
+          $('.tab-content').removeClass('current');
+
+          $(this).addClass('current');
+          $("#"+tab_id).addClass('current');
+        })
+
+       })  
+
+
+
+
+
+
+
+
+
+
+
+
+        $('#tabs')
+        .tabs()
+        .addClass('ui-tabs-vertical ui-helper-clearfix');
+        $('#tabs1')
+        .tabs()
+        .addClass('ui-tabs-vertical ui-helper-clearfix');
+
+       /* setTimeout(function() {
+            $.mobile.changePage("#home", "fade");
+          }, 3000); */
+
+$(document).ready(function() {
+
+
+  $("#splashpage").on("swipe",function(){
+   $.mobile.changePage("#home", {
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+ });
+});
+
+$(".btnHome").on("click",function(){
+ $.mobile.changePage("#home", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});
+
+$(".btnTeam").on("click",function(){
+ $.mobile.changePage("#team", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});
+
+$(".btnHunt").on("click",function(){
+ $.mobile.changePage("#huntMenu", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});
+
+$(".btnPOI").on("click",function(){
+ $.mobile.changePage("#poi", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});
+
+$(".btnNews").on("click",function(){
+ $.mobile.changePage("#articles", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});
+
+$(".btnContact").on("click",function(){
+ $.mobile.changePage("#contact", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});
+
+</script>
+
+<script>
+var content = $.mobile.getScreenHeight() - $(".ui-header").outerHeight() - $(".ui-footer").outerHeight() - $(".ui-content").outerHeight() + $(".ui-content").height();
+$(".ui-content").height(content);
+
+$(document).ready(function D() {
+  $('#btnHunt-home').click(function (event) { 
+   $.mobile.changePage("#huntMenu",{
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+  $('#btnTeam-home').click(function (event) { 
+   $.mobile.changePage("#team", {
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+  $('#btnContact-home').click(function (event) { 
+   $.mobile.changePage("#contact", {
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+  $('#btnPOI-home').click(function (event) { 
+   $.mobile.changePage("#poi", {
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+  $('#btnArticles-home').click(function (event) { 
+   $.mobile.changePage("#articles", {
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+
+  $('#btnStart').click(function (event) { 
+   $.mobile.changePage("#hunt", "fade");
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+
+});
+
+</script>
+
+
+
+
+<script>
+
+
+var currentQuestion = null;
+var questionIndex = 0;
+var score = 0;
+var qscore = 3;
+var count = 0;
+// Your list of questions. Each question has an answer (either a,b or c)
+// and then a set of "options" in the question
+var questions = [
+{ 
+  'line': 'Nothern Line',
+  'map': 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.5826867888027!2d-0.14422528122861!3d51.53921358024133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ae1b830fcf7%3A0x9b934203c885a5d!2sCamden+Town!5e0!3m2!1sen!2suk!4v1451932373433',
+  'colour': '#000000',
+  'hint1': '100,00 people visit the stalls each weekend',
+  'hint2': 'Nightclub scene since 1950.',
+  'answer': 'Camden',
+  'question': 'I am the station that drops you at the doorstep of londons forth largest attraction.',
+  options: ['Brixton', 'Oxford Street', 'Camden', 'Stratford']
+},
+{ 
+  'line': 'Goodge Street',
+  'map': 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9930.412536035137!2d-0.1346317!3d51.5204966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f715a591021f1ef!2sGoodge+Street+Station!5e0!3m2!1sen!2suk!4v1451855479169',
+  'colour': '#ff9d62',
+  'hint1': 'Chicken and Chips',
+  'hint2': 'Fish and Chips',
+  'answer': '81',
+  'question': 'What is 9*9',
+  options: ['9', '81', '99', 'Brown']
+},
+{ 
+  'line': 'North Greenwich',
+  'map': 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9930.412536035137!2d-0.1346317!3d51.5204966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f715a591021f1ef!2sGoodge+Street+Station!5e0!3m2!1sen!2suk!4v1451855479169',
+  'colour': '#0048ff',
+  'hint1': 'Chicken and Chips',
+  'hint2': 'Fish and Chips',
+  'answer': '2',
+  'question': 'What is 1+1',
+  options: ['7', '3', '2', 'Brown']
+},
+{ 
+  'line': 'Canary Wharf',
+  'map': 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9930.412536035137!2d-0.1346317!3d51.5204966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f715a591021f1ef!2sGoodge+Street+Station!5e0!3m2!1sen!2suk!4v1451855479169',
+  'colour': '#00ff8a',
+  'hint1': 'Chicken and Chips',
+  'hint2': 'Fish and Chips',
+  'answer': '6',
+  'question': 'What is 3+3',
+  options: ['5', '8', '6', 'Brown']
+},
+{ 
+  'line': 'Camden Town',
+  'map': 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9930.412536035137!2d-0.1346317!3d51.5204966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f715a591021f1ef!2sGoodge+Street+Station!5e0!3m2!1sen!2suk!4v1451855479169',
+  'colour': '#909599',
+  'hint1': 'Chicken and Chips',
+  'hint2': 'Fish and Chips',
+  'answer': '16',
+  'question': 'What is 8+8',
+  options: ['16', '14', '15', 'Brown']
+}
+
+];
+
+$("label").click(function(event) {
+ $("label").css("background-color","grey");
+ $("#"+event.target.id).css("background-color","red");
+});
+
+
+
+
+// Detect when the submit button is clicked and check if the question
+// was answered correctly
+$("#next").click(function() {
+ 
+   // alert(questions.length);
+  //  var val = $('#questions').find('input:checked').val();
+
+  showQuestion();
+
+    return false;
+  });
+
+$("#done").click(function() {
+
+  var val = $("input:radio[name ='radio-choice-1']:checked").val();
+  // alert(val);
+      // $('label[for="radio-choice-1"]').text("zaaaak");
+      
+      if(currentQuestion) {
+        if(currentQuestion.answer == val) {
+
+           // alert("Nice work! " + score);
+           count++;
+           score = score+qscore;
+          // showQuestion();
+
+         } else {
+
+           // alert("Nope! "+ score);
+           count++;
+         // score++;
+        // showQuestion();
+       }
+     }
+
+     if(count == questions.length){
+      $( "#questions" ).empty();
+      $( "#questions" ).append( "<p>Score: "+score+"</p>" );
+
+    }else{
+
+    }
+
+  $("#question").hide();
+  $("#done").hide();
+  $("iframe").show();
+  $("#next").show();
+ // $("#hunt table").css("margin-top", "405px");
+  $("#addFav").show();
+  $(".radioanswers").hide();
+  $("#hint1").hide();
+  $("#hint2").hide();
+  $('g #score').text(score);
+});  
+
+
+
+var hint1 = "???";
+$("#hint1").click(function() {
+
+ $("#hint1").text(hint1);
+ qscore--;
+   // $('g #score').text(score);
+
+
+add("zak", "image", "url");
+
+
+ /*  var testObject = [{"name":"zak","age":"seven"},{"name":"jason","age":"six"}]
+
+// Put the object into storage
+localStorage.setItem('testObject', JSON.stringify(testObject));
+
+// Retrieve the object from storage
+var retrievedObject = localStorage.getItem('testObject');
+
+console.log('retrievedObject: ', JSON.parse(retrievedObject)); */
+
+ });
+
+
+var hint2 = "???";
+$("#hint2").click(function() {
+
+ $("#hint2").text(hint2);
+ qscore--;
+   // $('g #score').text(score);
+
+ });
+
+// Set the value of an option in the question
+function setRadioLabel(radioId, text) {
+ $('label[for="' + radioId + '"]').text(text);
+ $('input[id="' + radioId + '"]').val(text);
+};
+
+// Show a random question
+function showQuestion() {
+    // Grab next question, and increment so we get a new one next time
+    var random = questions[questionIndex++ % questions.length];
+   // $('Text[for="' + radioId + '"]').text(text);
+   $('g #line').text(random.line);
+    // $('line[stroke="#ff0000"]').val(random.colour);
+    hint1 = random.hint1;
+    hint2 = random.hint2;
+    $("#hint1").text("Hint 1");
+    $("#hint2").text("Hint 2");
+$("label").css("background-color","grey");
+    qscore = 3;
+    $("#done").show();
+    $("#question").show();
+    $("iframe").hide();
+    $("#next").hide();
+    $("#addFav").hide();
+    $(".radioanswers").show();
+    $("#hint1").show();
+    $("#hint2").show();
+    $('iframe').attr("src",random.map);
+    
+    $("line").attr("stroke",random.colour);
+   // $('g #line').attr("fill",random.colour);
+    $('g #score').text(score);
+    $('#question').text(random.question);
+
+
+    
+   // $('input[type="radio"]').attr('checked', false).checkboxradio('refresh');
+
+   //  $('label[for="radio-choice-1"]').text(random.options[0]);
+   setRadioLabel('radio-choice-1', random.options[0]);
+   setRadioLabel('radio-choice-2', random.options[1]);
+   setRadioLabel('radio-choice-3', random.options[2]);
+   setRadioLabel('radio-choice-4', random.options[3]);
+   currentQuestion = random;
+   $('input[type="radio"]').attr('checked', false).checkboxradio('refresh');
+ };
+
+// Start the question stuff off
+
+showQuestion();
+
+
+
+
+
+
+function  add(id, image, url) {
+
+    var property = {id: id, image: image, url: url};
+    var propertyObj = JSON.parse(localStorage.getItem("favProperties"));
+
+    if (propertyObj === null) {
+        propertyObj = [];
+    }
+
+    propertyObj.push(property);
+
+    localStorage.setItem("favProperties", JSON.stringify(propertyObj));
+
+}
+
+
+
+</script>
+</body>
+
+</html>

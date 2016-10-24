@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>page demo</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div data-role="page" id="splashpage">
+        <div role="main" class="ui-content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="logo.png" id="logo" />
+            <br>
+            <br>
+           <!-- <img src="spin.gif" id="spin" /> -->
+        </div>
+    </div>
+
+
+    <!--------------------------------------------------------HOMEPAGE------------------------------------------------------------------>
+
+
+    <div data-role="page" id="home" style="height: 100%;">
+        <div role="main" class="ui-content">
+           
+                
+                
+<table cellspacing="10">
+	<tbody>
+		<tr id="banner">
+			<td colspan="3">HOME</td>
+		</tr>
+		<tr>
+            <td id="hunt" rowspan="2"><img src="Treasure.png" id="treasurelogo"/><br>HUNT</td>
+			<td id=""><img src="point.png" id="pointslogo"/><br>POINTS OF INTEREST</td>
+			<td><img src="newsletter.png" id="newslogo"/><br>NEWSLETTER</td>
+		</tr>
+		<tr>
+			<td><img src="articles.png" id="articleslogo"/><br>ARTICLES</td>
+			<td><img src="contact.png" id="contactlogo"/><br>CONTACT</td>
+		</tr>
+	</tbody>
+</table>
+                
+  
+          
+        </div>
+    </div>
+
+    <!--------------------------------------------------------HUNTPAGE------------------------------------------------------------------>
+
+    <div data-role="page" id="hunt">
+
+        <div class="header" data-role="header" data-position="fixed" data-add-back-btn="false">
+            <h1>Welcome</h1>
+        </div>
+        <div role="main" class="ui-content">
+
+
+ <fieldset id="questions" data-role="controlgroup">
+
+<svg style="height:180px; width:100%;text-align:center;border:0px solid black;margin:0px 0px;" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+ <!-- <polyline id="svg_1" fill="none" stroke-width="15" stroke="#909599" points="-1.9999676942825317,188 318.5000305175781,188 100%,188 "/> -->
+ <text id="station" xml:space="preserve" text-anchor="middle" font-family="Calibri" font-size="40" id="svg_4" y="32" x="50%" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Text Here</text>
+  <line x1="0" y1="100"  x2="100%" y2="100"  stroke="#ff0000" stroke-width="20" />
+  <circle id="svg_3" r="37.80212" cy="100" cx="50%" stroke-linecap="null" stroke-linejoin="null" stroke-width="15" stroke="#000000" fill="#ffffff"/>
+ </g>
+</svg>
+
+
+    <button id="question"></button>
+             <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1"  />
+             <label for="radio-choice-1">radio1</label>
+
+             <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+             <label for="radio-choice-2">radio2</label>
+
+             <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+             <label for="radio-choice-3">radio3</label>
+
+
+             <input type="submit" value="Next">
+             <button id="hint">Hint</button>
+    </fieldset>
+
+
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h1>Page footer </h1>
+        </div>
+    </div>
+
+    <script>
+       /* setTimeout(function() {
+            $.mobile.changePage("#home", "fade");
+        }, 3000); */
+$("#splashpage").on("swipe",function(){
+ $.mobile.changePage("#home", {
+     transition: "slide",
+  reverse: false,
+  changeHash: false
+ });
+});
+    </script>
+    <script>
+var content = $.mobile.getScreenHeight() - $(".ui-header").outerHeight() - $(".ui-footer").outerHeight() - $(".ui-content").outerHeight() + $(".ui-content").height();
+$(".ui-content").height(content);
+        
+  $(document).ready(function D() {
+                    $('#hunt').click(function (event) { 
+                     $.mobile.changePage("#hunt", "fade");
+                    // $('#hunt').attr("href", "hunt.html");
+                    });
+                    
+                });
+
+
+
+
+
+
+var currentQuestion = null;
+var questionIndex = 0;
+var score = 0;
+var count = 0;
+// Your list of questions. Each question has an answer (either a,b or c)
+// and then a set of "options" in the question
+var questions = [
+  { 
+      'station': 'Westminster',
+      'colour': '#909599',
+      'hint': 'Chicken and Chips',
+      'answer': 'Mohamed',
+      'question': 'What is my surname?',
+      options: ['Jason', 'Mohamed', 'Brown']
+  },
+  { 
+      'station': 'Goodge Street',
+      'colour': '#ff9d62',
+      'hint': 'Chicken and Chips',
+      'answer': '81',
+      'question': 'What is 9*9',
+      options: ['9', '81', '99']
+  },
+    { 
+      'station': 'North Greenwich',
+      'colour': '#0048ff',
+      'hint': 'Chicken and Chips',
+      'answer': '2',
+      'question': 'What is 1+1',
+      options: ['7', '3', '2']
+  },
+    { 
+      'station': 'Canary Wharf',
+      'colour': '#00ff8a',
+      'hint': 'Chicken and Chips',
+      'answer': '6',
+      'question': 'What is 3+3',
+      options: ['5', '8', '6']
+  },
+    { 
+      'station': 'Camden Town',
+      'colour': '#909599',
+      'hint': 'Chicken and Chips',
+      'answer': '16',
+      'question': 'What is 8+8',
+      options: ['16', '14', '15']
+  }
+
+];
+
+// Detect when the submit button is clicked and check if the question
+// was answered correctly
+$('input[type="submit"]').click(function() {
+   // alert(questions.length);
+    var val = $('#questions').find('input:checked').val();
+  // var val = $("input:radio[name ='radio-choice-1']:checked").val();
+  // alert(val);
+      // $('label[for="radio-choice-1"]').text("zaaaak");
+      
+    if(currentQuestion) {
+        if(currentQuestion.answer == val) {
+            score++;
+           // alert("Nice work! " + score);
+          count++;
+            showQuestion();
+        } else {
+      
+            //alert("Nope! "+ score);
+          count++;
+            showQuestion();
+        }
+    }
+    if(count == questions.length){
+        $( "#questions" ).empty();
+        $( "#questions" ).append( "<p>Score: "+score+"</p>" );
+    }else{
+        
+    }
+    return false;
+});
+
+var hint = "???";
+$("#hint").click(function() {
+
+   $("#hint").text(hint);
+
+});
+
+// Set the value of an option in the question
+function setRadioLabel(radioId, text) {
+     $('label[for="' + radioId + '"]').text(text);
+     $('input[id="' + radioId + '"]').val(text);
+};
+
+// Show a random question
+function showQuestion() {
+    // Grab next question, and increment so we get a new one next time
+    var random = questions[questionIndex++ % questions.length];
+   // $('Text[for="' + radioId + '"]').text(text);
+    $('#station').text(random.station);
+    // $('line[stroke="#ff0000"]').val(random.colour);
+hint = random.hint;
+ $("#hint").text("Hint");
+
+   // var background = $('#hunt').style.backgroundColor();
+
+    // $("circle").attr("fill",background);
+
+
+     $("line").attr("stroke",random.colour);
+    
+    $('#question').text(random.question);
+    
+   // $('input[type="radio"]').attr('checked', false).checkboxradio('refresh');
+    
+   //  $('label[for="radio-choice-1"]').text(random.options[0]);
+    setRadioLabel('radio-choice-1', random.options[0]);
+    setRadioLabel('radio-choice-2', random.options[1]);
+    setRadioLabel('radio-choice-3', random.options[2]);
+    currentQuestion = random;
+    $('input[type="radio"]').attr('checked', false).checkboxradio('refresh');
+};
+
+// Start the question stuff off
+showQuestion();
+
+
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>page demo</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div data-role="page" id="hunt">
+
+        <div class="header" data-role="header" data-position="fixed" data-add-back-btn="true">
+            <h1>Welcome</h1>
+        </div>
+        <div role="main" class="ui-content">
+
+   <fieldset id="questions" data-role="controlgroup">
+    <button id="question"></button>
+             <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1"  />
+             <label for="radio-choice-1">Cat</label>
+
+             <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+             <label for="radio-choice-2">Dog</label>
+
+             <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+             <label for="radio-choice-3">Hamster</label>
+
+
+             <input type="submit" value="submit">
+    </fieldset>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h1>Page footer </h1>
+        </div>
+    </div>
+
+    <script>
+var content = $.mobile.getScreenHeight() - $(".ui-header").outerHeight() - $(".ui-footer").outerHeight() - $(".ui-content").outerHeight() + $(".ui-content").height();
+$(".ui-content").height(content);
+        
+
+var currentQuestion = null;
+var questionIndex = 0;
+
+// Your list of questions. Each question has an answer (either a,b or c)
+// and then a set of "options" in the question
+var questions = [
+  { 
+      'answer': 'Mohamed',
+      'question': 'What is my surname?',
+      options: ['Jason', 'Mohamed', 'Brown']
+  },
+  { 
+      'answer': '81',
+      'question': 'What is 9*9',
+      options: ['9', '81', '99']
+  },
+    { 
+      'answer': '2',
+      'question': 'What is 1+1',
+      options: ['7', '3', '2']
+  },
+    { 
+      'answer': '6',
+      'question': 'What is 3+3',
+      options: ['5', '8', '6']
+  },
+    { 
+      'answer': '16',
+      'question': 'What is 8+8',
+      options: ['16', '14', '15']
+  }
+
+];
+
+// Detect when the submit button is clicked and check if the question
+// was answered correctly
+$('input[type="submit"]').click(function() {
+   // alert("clicked");
+    var val = $('#questions').find('input:checked').val();
+  // var val = $("input:radio[name ='radio-choice-1']:checked").val();
+  // alert(val);
+      // $('label[for="radio-choice-1"]').text("zaaaak");
+    if(currentQuestion) {
+        if(currentQuestion.answer == val) {
+            alert("Nice work!");
+            showQuestion();
+        } else {
+            alert("Nope! "+ currentQuestion.answer + " " + val);
+        }
+    }
+    return false;
+});
+
+// Set the value of an option in the question
+function setRadioLabel(radioId, text) {
+     $('label[for="' + radioId + '"]').text(text);
+     $('input[id="' + radioId + '"]').val(text);
+};
+
+// Show a random question
+function showQuestion() {
+    // Grab next question, and increment so we get a new one next time
+    var random = questions[questionIndex++ % questions.length];
+    
+    $('#question').text(random.question);
+    
+   // $('input[type="radio"]').attr('checked', false).checkboxradio('refresh');
+    
+   //  $('label[for="radio-choice-1"]').text(random.options[0]);
+    setRadioLabel('radio-choice-1', random.options[0]);
+    setRadioLabel('radio-choice-2', random.options[1]);
+    setRadioLabel('radio-choice-3', random.options[2]);
+    currentQuestion = random;
+    $('input[type="radio"]').attr('checked', false).checkboxradio('refresh');
+};
+
+// Start the question stuff off
+showQuestion();
+
+
+
+
+
+
+
+</script>
+</body>
+
+</html>

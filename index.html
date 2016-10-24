@@ -1,0 +1,1493 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>page demo</title>
+
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+ <link rel="stylesheet" type="text/css" href="lib/jquery.pageslide.css" />
+
+</head>
+
+<body>
+
+
+
+
+
+
+<div data-role="page" id="splashpage">
+    <div role="main" class="ui-content">
+        <table cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="logo.png" id="logo" />
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <font>SLIDE TO THE LEFT</font>
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>    
+
+
+
+        <!-- <img src="spin.gif" id="spin" /> -->
+    </div>
+</div>
+
+
+
+
+
+<div data-role="page" id="home" style="height: 100%;">
+    <div role="main" class="ui-content">
+
+        <div id="nav">
+
+            <ul>
+                <li class="btnHome">HOME</li>
+                <li class="btnHunt">HUNT</li>
+                <li class="btnPOI">POI</li>
+                <li class="btnNews">NEWS</li>
+                <li class="btnTeam">TEAM</li>
+                <li class="btnContact">CONTACT</li>
+            </ul>
+
+        </div>
+
+      <table cellspacing="10">
+    <tbody>
+
+
+  <tr>
+    <td id="btnHunt-home"><img src="Treasure.png" id="treasurelogo" />&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp HUNT</td>
+  </tr>
+  <tr>
+    <td id="btnPOI-home"><img src="point.png" id="pointslogo"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp POINTS OF INTEREST</td>
+  </tr>
+  <tr>
+    <td id="btnTeam-home"><img src="teamlogo.png" id="teamlogo"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp MEET THE TEAM</td>
+  </tr>
+    <tr>
+    <td id="btnArticles-home"><img src="articles.png" id="articleslogo"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ARTICLES</td>
+  </tr>
+    <tr>
+    <td id="btnContact-home"><img src="contact.png" id="contactlogo"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp CONTACT</td>
+  </tr>
+
+
+
+
+    </tbody>
+</table>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<div data-role="page" id="huntMenu">
+
+    <div class="header" data-role="header" data-position="fixed" data-add-back-btn="false">
+         <p><a class="open" href="#nav">Menu</a></p>  
+        <h1>HUNT</h1>
+    </div>
+    <div role="main" class="ui-content">
+
+
+
+
+
+         <table cellspacing="20">
+    <tr>
+        <td id="btnStart">START</td>
+      
+        </tr>
+         <tr>
+      <td id="btnRules">RULES</td>
+             </tr>
+              <tr>
+        <td id="btnFav">FAVOURITES</td>
+    </tr>
+  </table>
+
+
+    </div>
+
+    <!-- <div data-role="footer" data-position="fixed">
+         <h1>Page footer </h1>
+       </div> -->
+</div>
+
+
+
+
+
+<div data-role="page" id="team">
+
+    <div class="header" data-role="header" data-position="fixed" data-add-back-btn="false">
+        <p><a class="open" href="#nav">Menu</a></p> 
+        <h1>MEET THE TEAM</h1>
+    </div>
+    <div role="main" class="ui-content">
+
+
+        <table class="teamboxes" cellspacing="20">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Zakaria Mohamed</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="zak.jpg" height="100px" width="100px"></td>
+                        </tr>
+
+                        <tr>
+                            <td><center>Hello My name is Zakariya Mohamed and I am a software/web developer who is currently in my Last year of my degree programme. I am part of the the Find the lines team and played a key role in the development of the find the lines application. I am an outdoor person and like to keep myself active at every given opportunity and involve myself in such activities such as Football, Tennis, Hockey and lastly the Gym.</center></td>
+            </tr>
+
+        </table>
+
+
+
+        </td>
+        <td>
+
+
+            <table>
+                <tr>
+                    <td>Bryan Nagera</td>
+                </tr>
+
+                <tr>
+                    <td><img src="bryan.jpg" height="100px" width="100px"></td>
+                </tr>
+
+                <tr>
+                    <td><center>Hello My name is Bryan Nagera and I am a software Engineer who is currently in my Last year of my degree programme. I am part of the the Find the lines team and played a key role in the development of the find the lines application. I am an outdoor person and like to keep myself active at every given opportunity and involve myself in such activities such as Football, Tennis, Hockey and lastly the Gym.</center></td>
+                </tr>
+
+            </table>
+
+
+
+        </td>
+        </tr>
+        <tr>
+            <td>
+
+
+                <table>
+                    <tr>
+                        <td>Maywand Amin</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="maywand.jpg" height="100px" width="100px"></td>
+                    </tr>
+
+                    <tr>
+                        <td><center>Maywand Amin. 21 year old software engineering student who studies at Westminster university. Works part time at Heathrow for world duty free promoting fragrances for luxury brands.</center></td>
+        </tr>
+
+        </table>
+
+
+        </td>
+        <td>
+
+
+            <table>
+                <tr>
+                    <td>Ian Asante</td>
+                </tr>
+
+                <tr>
+                    <td><img src="ian.jpg" height="100px" width="100px"></td>
+                </tr>
+
+                <tr>
+                    <td><center>Hello My name is Ian Asante and I am a software Engineer who is currently in my Last year of my degree programme. I am part of the the Find the lines team and played a key role in the development of the find the lines application. I am an outdoor person and like to keep myself active at every given opportunity and involve myself in such activities such as Football, Tennis, Hockey and lastly the Gym.</center></td>
+        </tr>
+
+        </table>
+
+
+
+
+        </td>
+        </tr>
+        </table>
+
+
+    </div>
+
+    <!-- <div data-role="footer" data-position="fixed">
+         <h1>Page footer </h1>
+       </div> -->
+</div>
+
+
+
+
+
+
+
+
+<div data-role="page" id="poi">
+
+    <div class="header" data-role="header" data-position="fixed" data-add-back-btn="false">
+        <p><a class="open" href="#nav">Menu</a></p> 
+        <h1>POINT OF INTEREST</h1>
+    </div>
+    <div role="main" class="ui-content">
+
+<div data-role="controlgroup">
+<button id="updatepoi">View All</button>
+<button id="updatefav">Favourites</button>
+    </div
+
+
+
+
+        <table id="poipos">
+            <tr>
+                <td colspan="2"><ul id="favList"></ul></td>
+            </tr>
+        </table>
+
+    </div><!-- container -->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="articles">
+
+    <div class="header" data-role="header" data-position="fixed" data-add-back-btn="false">
+        <p><a class="open" href="#nav">Menu</a></p> 
+        <h1>NEWS</h1>
+    </div>
+    <div role="main" class="ui-content">
+
+
+
+
+<div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+    <div data-role="collapsible">
+        <h3>Article 1</h3>
+        <p>Records tumbled in the Boxing Day sales today as frenetic shoppers sent tills into meltdown.
+Millions of bargain-hunters made a beeline for the high street, with some queuing since midnight to ensure they bagged the best deals.
+Retailers up and down the country slashed prices and opened as early as 6am in a bid to entice them to part with their cash.
+A record 10million shoppers are expected to have spent around £3billion - £4.8million a minute - by the end of the day.
+In London's West End shopping mecca, by 11am footfall was up 31.3 per cent on Boxing Day last year with sales fuelled by rich tourists. The UK average footfall was up by 21.6 per cent.
+</p>
+    </div>
+    <div data-role="collapsible">
+        <h3>Article 2</h3>
+        <p>Attractions ticket specialist AttractionTix.co.uk have announced the winners of their 2015 Worldwide Attractions Awards, the only awards solely dedicated to recognising excellence within the attractions industry.
+Over 13,500 public votes from travel and attraction fans were cast, resulting in the¬ top attractions across 15 different categories including the Best Attraction in the World, Teens' Choice and Most Romantic Attraction or Tour.
+The Coca-Cola London Eye won BEST ATTRACTION IN THE UK along with being highly commended in the BEST ATTRACTION IN LONDON category.
+</p>
+    </div>
+    <div data-role="collapsible">
+        <h3>Article 3</h3>
+        <p>Buckingham Palace have shared an adorable picture of the Duchess of Cambridge on Twitter, wishing her a happy birthday.
+Kate Middleton, who turns 34 today, can be seen grinning in the picture of her when she was a schoolgirl, next to a recent photo of her smiling.
+The picture was tweeted from the account @BritishMonarchy, alongside the message: "Wishing The Duchess of Cambridge @KensingtonRoyal a very happy birthday! #HappyBirthdayHRH"
+It is not know what she will be doing to mark the occasion, but it is thought she could celebrate with a quiet candlelit dinner with her husband, Prince William.
+</p>
+    </div>
+    <div data-role="collapsible">
+        <h3>Article 4</h3>
+        <p>When Camden Market first opened in 1973, it was based in a bomb-damaged packing warehouse and was only expected to last a summer. Forty years later, it’s grown from counter-culture ghetto to capitalist mecca, with young tourists flocking to buy everything from Doc Martins and designer furniture to vinyl records and bongs.
+Now though, stall holders say they are in a “state of fear” over plans to list the market on the stock exchange and plough the proceeds into developing 170 new flats, a potential boutique hotel, cinema and designer stores. Market veterans warn the plans risk sucking the “charm and creativity” out of an area whose edgy, bohemian vibe inspired the likes of The Clash, Amy Winehouse and Pete Doherty.
+</p>
+    </div>
+</div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="contact">
+
+    <div class="header" data-role="header" data-position="fixed" data-add-back-btn="false">
+        <p><a class="open" href="#nav">Menu</a></p> 
+        <h1>CONTACT US</h1>
+    </div>
+    <div role="main" class="ui-content">
+
+
+         
+       <center><h2>University Of Westminster</h3>
+       <h3>101 New Cavendish Street <br>London W1W 6XH<br>
+T: +44 (0)20 7911 5000</h2></center>
+
+
+
+           <input type="text" name="text-basic" id="text-basic" value="Name">
+        <input type="text" name="text-basic" id="text-basic" value="Email">
+     <textarea cols="40" rows="8" name="textarea" id="textarea">Message</textarea>
+     <button id="sendContact" style="background-color:#0270c5;">Send</button></td>
+               
+    
+
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div data-role="page" id="hunt">
+<p><a class="open" style="margin-top:30px;z-index:5;" href="#nav">Menu</a></p> 
+
+    <div role="main" class="ui-content">
+
+
+        <div id="#questions">
+
+            <svg style="position:relative;height:160px; width:105%;text-align:center;border:0px solid black;left:-20px;z-index: 2;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+            <g>
+            <title>Layer 1</title>
+            <!-- <polyline id="svg_1" fill="none" stroke-width="15" stroke="#909599" points="-1.9999676942825317,188 318.5000305175781,188 100%,188 "/> -->
+            <text id="line" xml:space="preserve" text-anchor="middle" font-family="Calibri" font-size="30" id="svg_4" y="70" x="55%" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">Text Here</text>
+
+            <line x1="0" y1="100"  x2="100%" y2="100"  stroke="#ff0000" stroke-width="20" />
+
+
+            <circle id="svg_3" r="50" cy="100" cx="90%" stroke-linecap="null" stroke-linejoin="null" stroke-width="15" stroke="#000000" fill="#ffffff"/>
+
+            <text  xml:space="preserve" text-anchor="middle" font-family="Calibri" font-size="20" id="svg_4" y="95" x="90%" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">SCORE</text>
+
+            <text id="score" xml:space="preserve" text-anchor="middle" font-family="Calibri" font-size="40" id="svg_4" y="130" x="90%" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#000000">0</text>
+            </g>
+            </svg>
+
+            <!-- <div style="margin-top:-60px;padding-left:9%;" id="#map-hunt"><iframe src="" width="110%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>   -->
+
+
+
+            <div style="margin-left:-20px;px;margin-top:-60px;" id="#map-hunt"> <div id="googleMap1" style="width:110%;height:200px;z-index: 1;"></div></div>   
+
+
+
+            <div id="Puzzle" style="border:0px solid green;">
+
+                <form id="form1" runat="server">
+                    <div>
+                        <div id="divOutput"></div>
+                        <table id="canvas" cellspacing="5" >
+                            <tr>
+                                <td id="td1" onclick="TabClicked(1);"></td>
+                                <td id="td2" onclick="TabClicked(2);"></td>
+
+
+
+                            </tr>
+                            <tr>
+                                <td id="td3" onclick="TabClicked(3);"></td>
+                                <td id="td4" onclick="TabClicked(4);"></td>
+
+
+                            </tr>                
+
+
+                        </table>
+
+                    </div>
+
+
+
+
+            </div>
+
+            </form>
+
+        </div>
+
+        
+
+
+        <div id="paypal" style="margin-top:20px;">
+
+            <table style="border:0px solid black;width:50%;margin-left:30%;">
+                <tr>
+                    <td style="text-align:right;"><img src="tshirt.png" height="365" width="325"></td>
+                    <td>
+
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="X7T6G5DR59FWG">
+                            <table style="text-align:center;">
+                                <tr><td><input type="hidden"  name="on0" value="Size">Select Size</td></tr><tr><td><select name="os0">
+                                            <option value="XXS">XXS </option>
+                                            <option value="XS">XS </option>
+                                            <option value="S">S </option>
+                                            <option value="M">M </option>
+                                            <option value="L">L </option>
+                                            <option value="XL">XL </option>
+                                            <option value="XXL">XXL </option>
+                                        </select> </td></tr>
+                                <tr>
+                                    <td>
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </form>
+
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+        <table id="hideforscore" cellspacing="10">
+            <tbody>
+
+
+
+                <tr>
+                    <td colspan="2">
+                        <font id="question"></font>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <div class="radioanswers">
+                            <fieldset data-role="controlgroup">
+                    
+                            <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1"  />
+                            <label id="radio-choice-1" onClick="setBackhround('radio-choice-1');" for="radio-choice-1">radio1</label>
+
+     <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+                            <label id="radio-choice-2" for="radio-choice-2">radio2</label>
+
+                            <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+                            <label id="radio-choice-3" for="radio-choice-3">radio3</label>
+                            <input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4"  />
+                            <label id="radio-choice-4" for="radio-choice-4">radio4</label>
+
+                            </fieldset>
+                        </div>
+                    </td>
+</tr>
+
+
+                <tr>
+                    <td>
+                        
+                        <div data-role="controlgroup">
+                        <button id="hint1" style="background-color:#0270c5;">Hint 1</button>
+                        <button id="hint2" style="background-color:#0270c5;">Hint 2</button>
+                         <button id="done" style="background-color:#0270c5;">Done</button></td>
+                         </div>
+<div data-role="controlgroup">
+                         <button id="addFav" style="background-color:#0270c5;">Add to Favourites</button>
+                         <button id="next" style="background-color:#0270c5;">Next</button>
+                          </div>
+
+                          <div data-role="controlgroup">
+              <button id="doneQuiz" style="background-color:#0270c5;">Done</button>
+               <button id="addFavPuzzle" style="background-color:#0270c5;">Add to Favourites</button>
+                <td><button id="finishPuzzle" style="background-color:#0270c5;">Finish</button>
+                </div>
+                    </td>
+                   
+                <tr>
+                    
+                    <td>
+
+                       
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
+     
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="lib/jquery.pageslide.min.js"></script>
+
+
+        <script type="text/javascript">
+$(".open").pageslide();
+
+  var tabs = new Array(1, 2, 3, 4);
+
+      $(document).ready(function () {
+          Setup();
+          fisherYatesRandomize(tabs);
+          displayArray();
+      });
+
+
+      function Setup() {
+          $("#btnNewGame").click(function () { fisherYatesRandomize(tabs); displayArray(tabs); });
+          $("#Congratulations").dialog({
+              bgiframe: true, autoOpen: false, height: 150, width: 300, modal: true, resizable: false
+          });
+          $("#canvas td").hover(
+                function () { $(this).addClass("ui-state-hover");},
+                function () { $(this).removeClass("ui-state-hover");}
+                );
+      }
+
+      function TabClicked(tabNum) {
+          var left = tabNum - 1;
+          var right = tabNum + 1;
+          var top = tabNum - 2;
+          var bottom = tabNum + 2;
+
+          if (Has16(left)){
+              Swap(tabNum, left);
+                return;
+            }
+
+            if (Has16(right)) {
+                Swap(tabNum, right);
+                return;
+            }
+
+            if (Has16(top)) {
+                Swap(tabNum, top);
+                return;
+            }
+
+            if (Has16(bottom)) {
+                Swap(tabNum, bottom);
+                return;
+            }
+        }
+
+        function WinCheck() {
+            for (t = 1; t <= 4; t++ )
+                if (tabs[t - 1] != t)
+                    return false;
+            return true;
+        }
+
+        function Swap(tabLocation, Location16){
+            temp = tabs[tabLocation - 1];
+            tabs[tabLocation - 1] = tabs[Location16 - 1];
+            tabs[Location16 - 1] = temp;
+
+            Show(tabLocation);
+            Show(Location16);
+
+            if (WinCheck())
+                Congratulations();            
+        }
+
+        function Has16(tabNum) {
+            if (tabNum >= 1 && tabNum <= 4)
+                if (tabs[tabNum - 1] == 4)
+                    return true;
+            return false;
+        }
+
+      // display array
+      function displayArray() {
+          for (i = 1; i <= tabs.length; i++) {
+              Show(i);              
+          }
+      }
+
+        // Ref: http://sedition.com/perl/javascript-fy.html
+      function fisherYatesRandomize(myArray) {
+          var i = myArray.length;
+          if (i == 0) return false;
+          while (--i) {
+              var j = Math.floor(Math.random() * (i + 1));
+              var tempi = myArray[i];
+              var tempj = myArray[j];
+              myArray[i] = tempj;
+              myArray[j] = tempi;
+          }
+      }
+
+      function Show(tabLocation) {
+          if (tabs[tabLocation - 1] == 4) {
+              $("#td" + tabLocation).text("");
+              $("#td" + tabLocation).removeClass();
+          }
+          else {
+              $("#td" + tabLocation).text(tabs[tabLocation - 1]);
+              $("#td" + tabLocation).removeClass().addClass("ui-widget-header");
+          }
+      }
+
+      function Congratulations() {
+         // $("#Congratulations").dialog('open');
+        //  $("#Canvas td").attr('diasbled', true);
+          $("#doneQuiz").show();
+          
+
+        }
+
+
+
+        </script>
+
+<script type="text/javascript">
+
+
+
+ function map(lat, lng, id) {
+  var mapProp = {
+    center:new google.maps.LatLng(lat,lng),
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById(id),mapProp);
+  var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(lat,lng),
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+}
+ google.maps.event.addDomListener(window, 'load', map);
+
+
+
+
+//$(document).on("pageshow","#poi",function(){
+//map(51.508742, -0.120850, "googleMap")
+//});
+
+
+
+
+
+</script>
+
+
+
+
+        <script>
+
+        $(document).ready(function(){
+
+         $('ul.tabs li').click(function(){
+          var tab_id = $(this).attr('data-tab');
+
+          $('ul.tabs li').removeClass('current');
+          $('.tab-content').removeClass('current');
+
+          $(this).addClass('current');
+          $("#"+tab_id).addClass('current');
+        })
+
+       })  
+
+
+
+
+
+
+
+
+
+
+
+
+        $('#tabs')
+        .tabs()
+        .addClass('ui-tabs-vertical ui-helper-clearfix');
+        $('#tabs1')
+        .tabs()
+        .addClass('ui-tabs-vertical ui-helper-clearfix');
+
+       /* setTimeout(function() {
+            $.mobile.changePage("#home", "fade");
+          }, 3000); */
+
+$(document).ready(function() {
+
+
+  $("#splashpage").on("swipe",function(){
+   $.mobile.changePage("#home", {
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+ });
+});
+
+$(".btnHome").on("click",function(){
+ $.mobile.changePage("#home", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});
+
+$(".btnTeam").on("click",function(){
+ $.mobile.changePage("#team", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});
+
+$(".btnHunt").on("click",function(){
+ $.mobile.changePage("#huntMenu", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+
+});
+
+$(".btnPOI").on("click",function(){
+ $.mobile.changePage("#poi", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});
+
+/*$(".btnPOI").on("click",function(){
+ $.mobile.changePage("#favourites", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});*/
+
+$(".btnNews").on("click",function(){
+ $.mobile.changePage("#articles", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});
+
+$(".btnContact").on("click",function(){
+ $.mobile.changePage("#contact", {
+   transition: "fade",
+   reverse: false,
+   changeHash: false
+ });
+});
+
+</script>
+
+<script>
+var content = $.mobile.getScreenHeight() - $(".ui-header").outerHeight() - $(".ui-footer").outerHeight() - $(".ui-content").outerHeight() + $(".ui-content").height();
+$(".ui-content").height(content);
+
+$(document).ready(function D() {
+  $('#btnHunt-home').click(function (event) { 
+   $.mobile.changePage("#huntMenu",{
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+  $('#btnTeam-home').click(function (event) { 
+   $.mobile.changePage("#team", {
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+  $('#btnContact-home').click(function (event) { 
+   $.mobile.changePage("#contact", {
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+  $('#btnPOI-home').click(function (event) { 
+   $.mobile.changePage("#poi", {
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+  $('#btnArticles-home').click(function (event) { 
+   $.mobile.changePage("#articles", {
+     transition: "slide",
+     reverse: false,
+     changeHash: false
+   });
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+
+  $('#btnStart').click(function (event) { 
+   $.mobile.changePage("#hunt", "fade");
+   location.reload(true);
+
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+
+
+  $('#btnFav').click(function (event) { 
+
+   $.mobile.changePage("#poi", "fade");
+
+   jQuery('#updatefav').click();
+                    // $('#hunt').attr("href", "hunt.html");
+                  });
+
+
+});
+
+</script>
+
+
+
+
+<script>
+var setID  = null;
+var setStation  = null;
+var setImage = null;
+var setLatitude = null;
+var setLongitude  = null;
+var setInformation  = null;
+
+var currentLat = null;
+var currentLong = null;
+
+var currentQuestion = null;
+var questionIndex = 0;
+var score = 0;
+var qscore = 3;
+var count = 0;
+// Your list of questions. Each question has an answer (either a,b or c)
+// and then a set of "options" in the question
+var questions = [
+{ 
+  'id': "question1",
+  'latitude': 51.539407,
+  'longitude': -0.142670,
+  'information': 'Camden is station that drops you at the doorstep of londons forth largest attraction',
+  'image': 'Stations/CamdenStation.jpg',
+  'line': 'Northern Line',
+  'colour': '#231f20',
+  'hint1': '100,00 people visit the stalls each weekend',
+  'hint2': 'Nightclub scene since 1950.',
+  'answer': 'Camden',
+  'question': 'I am the station that drops you at the doorstep of londons forth largest attraction.',
+  options: ['Brixton', 'Oxford Street', 'Camden', 'Stratford']
+},
+{ 
+  'id': "question2",
+    'latitude': 51.531655,
+  'longitude': -0.124296,
+    'information': 'You are at Kings Cross Platform 9 ¾ Ready to pass through the wall',
+  'image': 'Stations/KingsCrossStation.jpg',
+  'line': 'Victoria Line',
+  'colour': '#009adb',
+  'hint1': 'Ron',
+  'hint2': 'Harry Potter',
+  'answer': 'Kings cross',
+  'question': 'You are at Platform 9 ¾ Ready to pass through the wall!',
+   options: ['Baker Street', 'Victoria', 'St Paul’s Cathedral', 'Kings cross']
+},
+{ 
+  'id': "question3",
+    'latitude': 51.522899,
+  'longitude': -0.155015,
+    'information': ' We are real outside but fake on the inside, we can burn with fire but we will shine in light. The closest station is baker street',
+  'image': 'Stations/BakerStreetStation.jpg',
+  'line': 'Metropolitan Line',
+  'colour': '#97005e',
+  'hint1': 'Where famous people go ',
+  'hint2': 'Made of wax',
+  'answer': 'Baker Street',
+  'question': 'We are real outside but fake on the inside, we can burn with fire but we will shine in light. what is the station next to?',
+  options: ['London eye', 'Baker Street', 'Buckingham Palace', 'Oxford Street']
+},
+{ 
+  'id': "question4",
+    'latitude': 51.517447,
+  'longitude': -0.120075,
+    'information': 'the museum that holds two million years of history, is next to Holborn station',
+  'image': 'Stations/HolbornStation.jpg',
+  'line': 'Central Line',
+  'colour': '#ef3425 ',
+  'hint1': 'You can View the Egypt tombs ',
+  'hint2': 'You can view the Samurai armor ',
+  'answer': 'Holborn',
+  'question': 'I am next to the museum that holds two million years of history, what station have I arrived at?',
+  options: ['Holborn', 'South Kensington', 'Knightsbridge', 'Russell square']
+},
+{ 
+  'id': "question5",
+    'latitude': 51.515212,
+  'longitude': -0.141837,
+    'information': 'oxford Street the heart of the UK’s number 1 shopping location',
+  'image': 'Stations/OxfordStreetStation.jpg',
+  'line': 'Central Line',
+  'colour': '#ef3425 ',
+  'hint1': 'The Beatles were discovered at the HMV store on the same street.',
+  'hint2': 'the largest Nike store in the UK is based next to the station',
+  'answer': 'Oxford Street',
+  'question': 'I am at the heart of the UK’s number 1 shopping location',
+  options: ['Stratford', 'Uxbridge', 'Hatton cross', 'Oxford Street']
+},
+{ 
+  'id': "question6",
+    'latitude': 51.503030,
+  'longitude': -0.152420,
+    'information': 'Hyde park coner is the biggest city parks in the world covering 350 acres of land',
+  'image': 'Stations/HydeParkCornerStation.jpg',
+  'line': 'Piccadilly Line',
+  'colour': '#1b3d93',
+  'hint1': 'Diana’s memorial has been placed here',
+  'hint2': 'Winter wonderland takes place here',
+  'answer': 'Hyde Park corner',
+  'question': 'Next to one of the biggest city parks in the world covering 350 acres of land', 
+  options: ['Royal Oak', 'Hyde Park corner', 'Regents Street', 'Paddington']
+},
+{ 
+  'id': "question7",
+    'latitude': 51.501195,
+  'longitude': -0.124842,
+    'information': 'Princess Diana got married next to Westminster station',
+  'image': 'Stations/WestminsterStation.jpg',
+  'line': 'Jubilee Line',
+  'colour': '#a2a9ac',
+  'hint1': 'Clock located opposite',
+  'hint2': 'End of year Fireworks ',
+  'answer': 'Westminster',
+  'question': 'Where did princess Diana got married?',
+  options: ['Hyde Park corner', 'Paddington', 'Westminster', 'Buckingham palace']
+},
+{ 
+  'id': "question8",
+    'latitude': 51.501195,
+  'longitude': -0.124842,
+    'information': 'the famous nursery rhyme dedicated to is called London Bridge .',
+  'image': 'Stations/LondonBridgeStation.jpg',
+  'line': 'Northern Line',
+  'colour': '#231f20',
+  'hint1': 'It has national rail station',
+  'hint2': 'Next to the shard',
+  'answer': 'London Bridge',
+  'question': 'It has a famous nursery rhyme dedicated to it.',
+  options: ['London Bridge', 'Stratford', 'Stratham', 'Waterloo']
+},
+
+{ 
+  'id': "question9",
+    'latitude': 51.501195,
+  'longitude': -0.124842,
+    'information': 'the famous nursery rhyme dedicated to is called London Bridge .',
+  'image': 'Stations/LondonBridgeStation.jpg',
+  'line': 'Northern Line',
+  'colour': '#231f20',
+  'hint1': 'No Hint',
+  'hint2': 'No Hint',
+  'answer': 'No Answer',
+  'question': 'No Question',
+  options: ['No Answer', 'No Answer', 'No Answer', 'No Answer']
+}
+
+];
+
+
+
+$("label").click(function(event) {
+ $("label").css("background-color","grey");
+ $("#"+event.target.id).css("background-color","red");
+});
+
+
+
+
+// Detect when the submit button is clicked and check if the question
+// was answered correctly
+$("#next").click(function() {
+ 
+   // alert(questions.length);
+  //  var val = $('#questions').find('input:checked').val();
+
+
+//alert("count: "+count +" -- " + questions.length)
+     if(count == questions.length-1){
+
+
+
+
+    
+      $( "#hideforscore" ).hide();
+       $( "#googleMap1" ).hide();
+       showPuzzle();
+    //   $('g #line').text("CONGRATULATIONS!");
+
+  //    $("#paypal").show();
+
+    }else{
+      
+  showQuestion();
+addOrRemoveFav(setID);
+    }
+
+
+
+
+
+
+
+
+    return false;
+  });
+
+
+  $("#addFav").click(function() {
+
+add(setID, setStation, setImage, setLatitude, setLongitude, setInformation);
+
+          $("#addFav").prop('disabled', true);
+               $("#addFav").css("background-color","grey");
+               $("#addFav").text("Added to Favourites");
+
+ });
+
+    $("#updatefav").click(function() {
+$("#favList").empty();
+      var fav = JSON.parse(localStorage.getItem("Favourites"));
+
+     
+for (var i = 0, max = fav.length; i < max; i++) {
+//$("#favList").append("<li>"+fav[i].information+"</li>")
+
+$("#favList").append("<li><table id='favTable'><tr><td colspan='2' style='font-size:20px;'><center>"+fav[i].station+"</center></td><td class='removefavbutton' id='"+fav[i].id+"' onClick=(removeFromFav('"+fav[i].id+"'))>Remove from Favourites</td></tr><tr><td><img src='"+fav[i].image+"' height='200px;' width='100%'></td><td>  <div id='googleMap"+i+"' style='width:100%; height:200px;'></div>  </td><td style='padding:10px;'><center>"+fav[i].information+"</center></td></tr></table></li>");
+map(fav[i].latitude, fav[i].longitude, "googleMap"+i)
+}
+
+ });
+//<iframe src='"+fav[i].location+"' width='100%' height='200' frameborder='0' style='border:0' allowfullscreen></iframe>
+
+
+
+
+   $("#updatepoi").click(function() {
+$("#favList").empty();
+      var fav = JSON.parse(localStorage.getItem("Favourites"));
+
+     
+for (var i = 0, max = questions.length; i < max; i++) {
+//$("#favList").append("<li>"+fav[i].information+"</li>")
+
+$("#favList").append("<li><table id='favTable'><tr><td colspan='3' style='font-size:20px;height:50px;'><center>"+questions[i].answer+"</center></td></tr><tr><td>  <img src='"+questions[i].image+"' class='images' height='200px' width='100%'>  </td><td>     <div id='googleMapAll"+i+"' style='width:100%; height:200px;'></div>   </td><td style='padding:10px;'><center>"+questions[i].information+"</center></td></tr></table></li>");
+map(questions[i].latitude, questions[i].longitude, "googleMapAll"+i)
+}
+
+ });
+
+
+
+function checkFav(id){
+  var favObj = JSON.parse(localStorage.getItem("Favourites"));
+
+        for (var i = 0, max = favObj.length; i < max; i++) {
+         // alert(id +"   "+favObj[i].id);
+            if (id === favObj[i].id) {
+
+               // $("#removefav").show();
+               // $("#addfav").hide();
+               $("#addFav").prop('disabled', true);
+               $("#addFav").css("background-color","grey");
+               $("#addFav").text("Added to Favourites");
+
+              $("#addFavPuzzle").prop('disabled', true);
+               $("#addFavPuzzle").css("background-color","grey");
+               $("#addFavPuzzle").text("Added to Favourites");
+                break;
+
+            } else {
+             //   $("#addfav").show();
+             //   $("#removefav").hide();
+              $("#addFav").prop('disabled', false);
+               $("#addFav").css("background-color","#0270c5");
+               
+             $("#addFav").text("Add to Favourites");
+
+                           $("#addFavPuzzle").prop('disabled', false);
+               $("#addFavPuzzle").css("background-color","#0270c5");
+               
+             $("#addFavPuzzle").text("Add to Favourites");
+
+            }
+        }
+}
+
+
+
+
+function removeFromFav(id){
+var favObj = JSON.parse(localStorage.getItem("Favourites"));
+
+            for (var i = 0, max = favObj.length; i < max; i++) {
+
+
+//alert(favObj[i].id + " "+ id);
+
+                if (favObj[i].id === id) {
+
+
+
+                    favObj.splice(i, 1);
+                    break;
+
+                }
+            }
+
+            localStorage.setItem("Favourites", JSON.stringify(favObj));
+             jQuery('#updatefav').click();
+}
+
+
+function  add(id, station, image, latitude, longitude, information) {
+
+    var property = {id: id, station: station, image: image, latitude: latitude, longitude: longitude, information: information};
+    var propertyObj = JSON.parse(localStorage.getItem("Favourites"));
+
+    if (propertyObj === null) {
+        propertyObj = [];
+
+    }
+
+
+
+
+    propertyObj.push(property);
+
+    localStorage.setItem("Favourites", JSON.stringify(propertyObj));
+
+
+
+
+
+}
+
+
+$("#done").click(function() {
+
+  var val = $("input:radio[name ='radio-choice-1']:checked").val();
+  // alert(val);
+      // $('label[for="radio-choice-1"]').text("zaaaak");
+      
+      if(currentQuestion) {
+        if(currentQuestion.answer == val) {
+
+           // alert("Nice work! " + score);
+           count++;
+           score = score+qscore;
+          // showQuestion();
+
+         } else {
+
+           // alert("Nope! "+ score);
+           count++;
+         // score++;
+        // showQuestion();
+       }
+     }
+
+
+
+  $("#question").hide();
+  $("#done").hide();
+  $("#googleMap1").show();
+
+  $("#next").show();
+ // $("#hunt table").css("margin-top", "405px");
+  $("#addFav").show();
+  $(".radioanswers").hide();
+  $("#hint1").hide();
+  $("#hint2").hide();
+  $('g #score').text(score);
+
+map(currentLat, currentLong, "googleMap1");
+checkFav(setID);
+});  
+
+
+$('#hint2').prop('disabled', true);
+$('#hint2').css('background-color',"grey");
+var hint1 = "???";
+$("#hint1").click(function() {
+
+$('#hint2').css('background-color',"#0270c5");
+  $('#hint2').prop('disabled', false);
+
+$('#hint1').prop('disabled', true);
+
+ $("#hint1").text(hint1);
+ qscore--;
+   // $('g #score').text(score);
+
+//add("setImage", "setLocation", "setInformation");
+
+localStorage.clear();
+
+
+
+ });
+
+
+var hint2 = "???";
+$("#hint2").click(function() {
+
+ $("#hint2").text(hint2);
+ qscore--;
+   // $('g #score').text(score);
+$('#hint2').prop('disabled', true);
+ });
+
+// Set the value of an option in the question
+function setRadioLabel(radioId, text) {
+ $('label[for="' + radioId + '"]').text(text);
+ $('input[id="' + radioId + '"]').val(text);
+};
+
+
+
+$("#doneQuiz").click(function() {
+
+
+score = score +3;
+$('g #score').text(score);
+$( "#Puzzle" ).hide();
+$( "#doneQuiz" ).hide();
+$("#addFavPuzzle").show();
+
+$("#finishPuzzle").show();
+  $("#googleMap1").show();
+      $( "#hideforscore" ).hide();
+       $( "#googleMap1" ).show();
+
+      // showPuzzle();
+      // $('g #line').text("CONGRATULATIONS!");
+
+     // $("#paypal").show();
+
+
+
+
+});
+
+
+$("#finishPuzzle").click(function() {
+
+
+
+
+$( "#Puzzle" ).hide();
+$( "#doneQuiz" ).hide();
+$("#addFavPuzzle").hide();
+
+$("#finishPuzzle").hide();
+  $("#googleMap1").hide();
+      $( "#hideforscore" ).hide();
+     
+
+
+       $('g #line').text("CONGRATULATIONS!");
+
+      $("#paypal").show();
+
+
+
+
+});
+
+$("#addFavPuzzle").click(function() {
+
+add(setID, setStation, setImage, setLatitude, setLongitude, setInformation);
+
+          $("#addFavPuzzle").prop('disabled', true);
+               $("#addFavPuzzle").css("background-color","grey");
+               $("#addFavPuzzle").text("Added to Favourites");
+
+
+});
+
+function showPuzzle(){
+
+
+
+
+$("#Puzzle").show();
+//$("#doneQuiz").show();
+
+
+}
+
+
+
+// Show a random question
+function showQuestion() {
+    // Grab next question, and increment so we get a new one next time
+    var random = questions[questionIndex++ % questions.length];
+   // $('Text[for="' + radioId + '"]').text(text);
+   $('g #line').text(random.line);
+    // $('line[stroke="#ff0000"]').val(random.colour);
+    hint1 = random.hint1;
+    hint2 = random.hint2;
+    $("#hint1").text("Hint 1");
+    $("#hint2").text("Hint 2");
+    $("label").css("background-color","grey");
+    qscore = 3;
+    $("#done").show();
+    $("#doneQuiz").hide();
+    $("#question").show();
+    $("#googleMap1").hide();
+    $("#next").hide();
+    $("#addFav").hide();
+       $("#Puzzle").hide();
+    $(".radioanswers").show();
+    $("#hint1").show();
+    $("#hint2").show();
+    $("#paypal").hide();
+
+$("#addFavPuzzle").hide();
+
+$("#finishPuzzle").hide();
+
+    //$('iframe').attr("src",random.map);
+$('#hint1').prop('disabled', false);
+$('#hint2').prop('disabled', true);
+$('#hint2').css('background-color',"grey");
+//checkFav(random.id);
+
+      //  $('#map-hunt').append("<div id='googleMap"+questionIndex+"' style='width:110%;height:200px;'>zaaak</div>");
+
+      currentLat= random.latitude;
+      currentLong= random.longitude;
+   // map(random.latitude, random.longitude, "googleMap1");
+
+
+    
+    $("line").attr("stroke",random.colour);
+   // $('g #line').attr("fill",random.colour);
+    $('g #score').text(score);
+    $('#question').text(random.question);
+
+
+setID = random.id;
+setStation = random.answer;
+   setImage = random.image;
+   setLatitude = random.latitude;
+setLongitude = random.longitude;
+setInformation  = random.information;
+    
+   // $('input[type="radio"]').attr('checked', false).checkboxradio('refresh');
+
+   //  $('label[for="radio-choice-1"]').text(random.options[0]);
+   setRadioLabel('radio-choice-1', random.options[0]);
+   setRadioLabel('radio-choice-2', random.options[1]);
+   setRadioLabel('radio-choice-3', random.options[2]);
+   setRadioLabel('radio-choice-4', random.options[3]);
+   currentQuestion = random;
+   $('input[type="radio"]').attr('checked', false).checkboxradio('refresh');
+ };
+
+// Start the question stuff off
+
+showQuestion();
+
+
+
+
+
+
+</script>
+</body>
+
+</html>
